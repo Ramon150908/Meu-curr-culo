@@ -7,28 +7,114 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+
    <div class="container-fluid">
     <header>
-      <!--Aqui vai o menu de navegação-->
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Meu Currículo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sobre mim</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/Ramon150908">Meu github</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
    </div>
+   <br>
+   <br>
+   <br>
    <div class="container">
     <main>
       <section>
         <div class="row">
           <div>
+            <br>
+            <br>
             <h2>Sobre Mim</h2>
             <div class="col">
-              <!--Aqui aparece minha descrição-->
+              <p class="espaco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem provident quia consequuntur minima, modi iste asperiores, ab minus saepe nemo pariatur, dignissimos odio itaque mollitia voluptas dolorum! Magni, voluptates nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia non voluptatem explicabo blanditiis? Placeat in aspernatur eaque eum facilis porro pariatur est nesciunt doloribus veniam quod, corrupti harum cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, cumque incidunt. Aliquid temporibus nemo, dignissimos accusantium iure dolorem nostrum et similique rem consequuntur voluptatibus deserunt nam reprehenderit cumque labore aut.</p>
+            <h2>Gostos</h2>
+            <p>Eu gosto de Como Treinar Seu Dragão, memes e Origami </p>
             </div>
-            <div class="col"><!--Aqui aparece minha imagem--></div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="img/Banguelinha.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Banguelinha</h5>
+                    <p>Simplesmente banguela</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/Origami.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: white;">Origami</h5>
+                    <p style="color: white;">Um modelo de origami de raposa</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Arte.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Arte</h5>
+                    <p>OBS: A arte não é de minha autoria</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
         <div class="row"></div>
       </section>
       <section>
         <div class="row">
-          <h2>meus Projetos</h2>
+          <h2>Meus Projetos</h2>
+          <p>está na aba github</p>
         </div>
         <div class="row">
           <!--Aqui vai 4 colunas que vão conte 4 cards cada uma delas-->>
